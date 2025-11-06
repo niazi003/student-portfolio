@@ -171,3 +171,137 @@ footer {
    All members: Add your new styles for profile.html, 
    projects.html, etc., below this line.
 */
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav li {
+    margin: 5px 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Profile Page Specific Styles */
+.profile-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.profile-section h3 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+
+.profile-section ul {
+    list-style-position: inside;
+}
+
+/* REQUIRED Media Query for Responsiveness */
+@media (max-width: 600px) {
+    .profile-container {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+}
+/* Basic container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Header & nav */
+  .site-header {
+    background: #0b5cff;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  .site-title { margin: 0; font-size: 1.4rem; }
+  .main-nav ul { list-style: none; margin: 0; padding: 0; display:flex; gap: 0.75rem; }
+  .main-nav a { color: #fff; text-decoration: none; }
+  
+  /* Intro */
+  .intro { margin: 1rem 0 1.5rem; }
+  
+  /* Projects grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .project-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .project-card h3 { margin-top: 0; }
+  .project-link { text-decoration: none; font-weight: 600; }
+  
+  /* Footer */
+  .site-footer { text-align:center; padding: 1rem 0; color: #666; }
+  
+  /* Responsive: media query (required by assignment) */
+  @media (max-width: 800px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .main-nav ul { flex-wrap: wrap; gap: 0.5rem; }
+  }
+  @media (max-width: 480px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .site-title { font-size: 1.1rem; }
+  }
+  

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Showcase Hub — Projects</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Showcase Hub</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Projects</h2>
+      <p>Below are several sample projects developed by our team. Each project includes a short description and a (dummy) link to view more.</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Projects list">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <h3>Project Alpha</h3>
+        <p class="project-desc">A demo web app showcasing responsive design and modern HTML/CSS techniques.</p>
+        <p class="project-meta">Technologies: HTML, CSS, JavaScript</p>
+        <p><a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">View project</a></p>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <h3>Real Estate ML</h3>
+        <p class="project-desc">A simple ML model for housing price estimation with a Flask front-end.</p>
+        <p class="project-meta">Technologies: Python, Flask, scikit-learn</p>
+        <p><a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">View project</a></p>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <h3>CampusConnect</h3>
+        <p class="project-desc">A React Native mobile app for campus events and messaging.</p>
+        <p class="project-meta">Technologies: React Native, Expo</p>
+        <p><a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">View project</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Showcase Hub — Student Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    // small UX touch: update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
