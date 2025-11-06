@@ -1,3 +1,137 @@
+/* ----------- General Styles ----------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ----------- Header & Navigation ----------- */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* ----------- Skills Section ----------- */
+.skills-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.skills-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.skills-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* ----------- Footer ----------- */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ----------- Responsive Layout ----------- */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-table table,
+  .skills-table thead,
+  .skills-table tbody,
+  .skills-table th,
+  .skills-table td,
+  .skills-table tr {
+    display: block;
+  }
+
+  .skills-table tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .skills-table td {
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .skills-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+}
 /* SHARED STYLESHEET (styles/style.css)
    Team Lead: Sets the baseline.
    All Members: Add your page-specific styles to this file.
